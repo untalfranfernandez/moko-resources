@@ -145,6 +145,7 @@ abstract class MRGenerator(
     data class MRSettings(
         val packageName: String,
         val className: String,
-        val visibility: MRVisibility
+        val visibility: MRVisibility,
+        val bundleName: String? = null
     )
 }

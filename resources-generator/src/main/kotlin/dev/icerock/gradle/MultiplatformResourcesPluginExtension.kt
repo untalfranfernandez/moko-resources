@@ -9,6 +9,7 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 open class MultiplatformResourcesPluginExtension {
     var multiplatformResourcesPackage: String? = null
     var multiplatformResourcesClassName: String = "MR"
+    var multiplatformBundleName: String? = null
     var multiplatformResourcesSourceSet: String? = null
     var iosBaseLocalizationRegion: String = "en"
     val sourceSetName: String

@@ -59,7 +59,7 @@ class AppleMRGenerator(
 ) {
     private val bundleClassName =
         ClassName("platform.Foundation", "NSBundle")
-    private val bundleIdentifier = "${mrSettings.packageName}.MR"
+    private val bundleIdentifier: String = mrSettings.bundleName ?: "${mrSettings}.MR"
 
     private val assetsDirectory: File get() = File(resourcesGenerationDir, ASSETS_DIR_NAME)
 
